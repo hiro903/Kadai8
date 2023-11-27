@@ -13,15 +13,15 @@ public class MakeupSearchRequest {
     }
 
     public String getStartsWith() {
-        return startsWith;
+        return startsWith == null ? "": startsWith;
     }
 
     public void setStartsWith(String startsWith) {
         this.startsWith = startsWith;
     }
-
+//三項演算子を使って
     public String getEndsWith() {
-        return endsWith;
+        return endsWith == null ? "": endsWith;
     }
 
     public void setEndsWith(String endsWith) {
@@ -29,7 +29,7 @@ public class MakeupSearchRequest {
     }
 
     public String getContains() {
-        return contains;
+        return contains == null ? "": contains;
     }
 
     public void setContains(String contains) {
