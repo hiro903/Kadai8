@@ -1,7 +1,7 @@
 ##  1.８回目の課題　目次
 - JDBC
 - O/Rマッパー
-- MyBatic
+- MyBatis
 - Read処理
 
 ## 2.作成したファイルの内容<br>
@@ -11,8 +11,7 @@ Makeupテーブルを作成し、検索条件（始まり、終わり、中に�
 
 ![image](https://github.com/hiro903/Kadai8/assets/145466271/d623785f-633b-4228-872a-acb27ef42611)
 ![image](https://github.com/hiro903/Kadai8/assets/145466271/0bcf3983-82e4-49c5-b2b4-8f5dc2da59ab)
-3.つまづいたところ<br>
--
+## 3.つまづいたところ<br>
 
 - テーブルの表示はできたがPostmanでURLを入力したら、エラーコード500（サーバー側に発生した問題によって、リクエストが処理されなかったことを示す）が出てきてしまった。IntelliJの赤字エラーは解決していたのでどこで間違えているのか見つけられなかった。
 
@@ -76,8 +75,10 @@ Mapperとする。＠MapperアノテーションにDBにどのような操作を
 
 15.**動作確認**<br>Spring Bootを起動し、`$ curl
    localhost:8080/names`でJSONコードが返ってくればOK。
-16. 次に、**クエリ文字列を指定して検索するAPIを実装。**<br>作ったMapperに追加でメソッドを作成する。前方一致で検索するために、SQLのLIKE句を使う。<br>
-17. `@Select("SELECT* FROM names WHERE name LIKE CONCAT(#{name}, '%')")`<br>SELECT * FROM
+
+16.次に、**クエリ文字列を指定して検索するAPIを実装。**<br>作ったMapperに追加でメソッドを作成する。前方一致で検索するために、SQLのLIKE句を使う。<br>
+
+17.`@Select("SELECT* FROM names WHERE name LIKE CONCAT(#{name}, '%')")`<br>SELECT * FROM
   names　……names　テーブルのすべてのデータの<br>WHERE name
 　……nameカラムから<br>LIKE ……曖昧検索<br>CONCAT(#{name},
   '%')　……複数の文字列を指定された文字列で連結させたもの
