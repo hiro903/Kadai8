@@ -6,16 +6,11 @@
 
 ## 2.作成したファイルの内容<br>
 Makeupテーブルを作成し、検索条件（始まり、終わり、中に含まれる文字）を指定してURL（Carlコマンド）から中のデータを表示できるようにしました。
-下記ポストマンでの動作確認の一例です。
-<img width="100" alt="qiita-square"
-src=["https://media.discordapp.net/attachments/1143485345036501076/1179071288988405840/image.png?ex=657872b5&is=6565fdb5&hm=41f8d8699faaa8a5afd01b5ebc34c53eaedcae85709639e9eb092079d3c76760&=&format=webp&quality=lossless&width=895&height=491)><br>
+ポストマンでの動作確認の一例です。
+![image](https://github.com/hiro903/Kadai8/assets/145466271/82971041-5875-4be8-9e26-df7c7bc06a13)
 
-<img width="100" alt="qiita-square"
-src=["https://media.discordapp.net/attachments/1176527140901113936/1179070678968848404/image.png?ex=65787223&is=6565fd23&hm=e779725902c009cbddfb04c8035f3141a38d41cf3c6e954f91559cf0fd490a8e&=&format=webp&quality=lossless&width=895&height=531)><br>
-
-<img width="100" alt="qiita-square"
-src=["https://media.discordapp.net/attachments/1143485345036501076/1179072016729509899/image.png?ex=65787362&is=6565fe62&hm=f014563d57482bda656fd86167f4a38dd350a98756a1be7f5eaf810d752aa70c&=&format=webp&quality=lossless&width=895&height=471)><br>
-
+![image](https://github.com/hiro903/Kadai8/assets/145466271/d623785f-633b-4228-872a-acb27ef42611)
+![image](https://github.com/hiro903/Kadai8/assets/145466271/0bcf3983-82e4-49c5-b2b4-8f5dc2da59ab)
 3.つまづいたところ<br>
 -
 
