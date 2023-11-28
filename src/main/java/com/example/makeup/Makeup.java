@@ -1,10 +1,11 @@
 package com.example.makeup;
-public class Makeup  {
+
+public class Makeup {
     //エンティティ
     private int id;
     private String name;
-    // constructorやgetterを作成する。必要に応じてsetterを作成する
 
+    // constructorやgetterを作成する。必要に応じてsetterを作成する
     public Makeup(int id, String name) {
         this.id = id;
         this.name = name;

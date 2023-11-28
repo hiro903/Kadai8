@@ -5,9 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MakeupApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(MakeupApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(MakeupApplication.class, args);
+    }
 }

@@ -1,7 +1,6 @@
 package com.example.makeup;
 
 public class MakeupSearchRequest {
-
     private String startsWith;
     private String endsWith;
     private String contains;
@@ -13,15 +12,16 @@ public class MakeupSearchRequest {
     }
 
     public String getStartsWith() {
-        return startsWith == null ? "": startsWith;
+        return startsWith == null ? "" : startsWith;
     }
 
     public void setStartsWith(String startsWith) {
         this.startsWith = startsWith;
     }
-//三項演算子を使って
+
+    //三項演算子を使って
     public String getEndsWith() {
-        return endsWith == null ? "": endsWith;
+        return endsWith == null ? "" : endsWith;
     }
 
     public void setEndsWith(String endsWith) {
@@ -29,7 +29,7 @@ public class MakeupSearchRequest {
     }
 
     public String getContains() {
-        return contains == null ? "": contains;
+        return contains == null ? "" : contains;
     }
 
     public void setContains(String contains) {
