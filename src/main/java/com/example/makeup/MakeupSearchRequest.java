@@ -1,31 +1,32 @@
 package com.example.makeup;
 
 public class MakeupSearchRequest {
-    private String startsWith;
-    private String endsWith;
+
+    private String prefix;
+    private String suffix;
     private String contains;
 
-    public MakeupSearchRequest(String startsWith, String endsWith, String contains) {
-        this.startsWith = startsWith;
-        this.endsWith = endsWith;
+    public MakeupSearchRequest(String prefix, String suffix, String contains) {
+        this.prefix = prefix;
+        this.suffix = suffix;
         this.contains = contains;
     }
 
-    public String getStartsWith() {
-        return startsWith == null ? "" : startsWith;
+    public String getPrefix() {
+        return prefix == null ? "" : prefix;
     }
 
-    public void setStartsWith(String startsWith) {
-        this.startsWith = startsWith;
+    public void setPrefix(String prefix) {
+        this.prefix = prefix;
     }
 
     //三項演算子を使って
-    public String getEndsWith() {
-        return endsWith == null ? "" : endsWith;
+    public String getSuffix() {
+        return suffix == null ? "" : suffix;
     }
 
-    public void setEndsWith(String endsWith) {
-        this.endsWith = endsWith;
+    public void setSuffix(String suffix) {
+        this.suffix = suffix;
     }
 
     public String getContains() {
@@ -35,4 +36,5 @@ public class MakeupSearchRequest {
     public void setContains(String contains) {
         this.contains = contains;
     }
+
 }
